@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.84.0">
+  <title>Checkout example · Bootstrap v5.0</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/checkout/">
+
+
+
+
+  <!-- JQuery CSS -->
+  <link rel="stylesheet" href="assets/dist/css/jquery-ui.css">
+  <!-- Bootstrap core CSS -->
+  <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="form-validation.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-light">
+
+  <div class="container">
+    <main>
+      <div class="py-5 text-center">
+        <img class="d-block mx-auto mb-4" src="assets/image/hce_logo_03.png" alt="" width="72" height="57">
+        <h2>Danh sách sinh viên</h2>
+        <p class="lead">Below is an example form built entirely with Bootstrap’s form controls. Each required form group
+          has a validation state that can be triggered by attempting to submit the form without completing it.</p>
+      </div>
+      <div class="g-5">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Mã SV</th>
+              <th scope="col">Họ Tên</th>
+              <th scope="col">Lớp</th>
+              <th>Action</th>
+
+            </tr>
+          </thead>
+          <tbody id="tbodySV">
+            <tr>
+              <th scope="row">1</th>
+              <td>123456</td>
+              <td>Nguyễn Văn An</td>
+              <td>17CSI01</td>
+              <td>
+                <button class="btn-sm btn-danger">Xóa</button>
+                  <button class="btn-sm btn-info">Sửa</button>
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+
+      </div>
+    </main>
+
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+      <p class="mb-1">&copy; 2017–2023 Thiết kế web nâng cao </p>
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="#">Privacy</a></li>
+        <li class="list-inline-item"><a href="#">Terms</a></li>
+        <li class="list-inline-item"><a href="#">Support</a></li>
+      </ul>
+    </footer>
+  </div>
+
+  <script src="assets/dist/js/jquery-3.6.4.js"></script>
+  <script src="assets/dist/js/jquery-ui.js"></script>
+  <script src="assets/dist/js/jquery.tmpl.js"></script>
+  <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="form-validation.js"></script>
+  <script src="sv.js"></script>
+  <script id="svTemplate" type="text/x-jQuery-tmpl">
+    <tr>  
+      <th scope="row">${STT}</th>
+      <td>${MaSV}</td>
+      <td>${HoTen}</td>
+      <td>${Lop}</td>
+      <td>
+          <button class="btn-sm btn-danger">Xóa</button>
+          <button class="btn-sm btn-info"Sửa</button>
+      </td>
+    </tr>
+
+
+  </script>
+</body>
+
+</html>
